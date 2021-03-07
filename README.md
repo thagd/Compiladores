@@ -1,5 +1,8 @@
 # Compiladores
 
+### Grupo
+743596 - Thaís Gagliardo Dordan
+
 ### T1
 #### Programas
 Para utilizar o compilar da linguagem LA e suas regras léxicas, é necessário instalar os seguintes programas e suas respectivas versões:
