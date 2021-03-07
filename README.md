@@ -20,9 +20,9 @@ cd /home/liven/NetBeansProjects/T1; JAVA_HOME=/usr /home/liven/netbeans-11.2/net
 ```
 
 Substituir pelos caminhos do seu computador:  
-ARG1 - caminho do compilador;  
-ARG2 - variável JAVA_HOME, diretório de instalação do java;  
-ARG3 - caminho do executável mvn do NetBeans.
+    ARG1 - caminho do compilador;  
+    ARG2 - variável JAVA_HOME, diretório de instalação do java;  
+    ARG3 - caminho do executável mvn do NetBeans.
 
 - Executar o programa utilizando o seguinte comando:
 ```
@@ -30,6 +30,6 @@ java -jar /home/liven/NetBeansProjects/T1/target/T1-1.0-SNAPSHOT-jar-with-depend
 ```
 
 Substituir pelos caminhos do seu computador:  
-ARG1 - caminho executável do compilador;  
-ARG1 - arquivo de entrada;  
-ARG3 - arquivo de saída.
+    ARG1 - caminho executável do compilador;  
+    ARG1 - arquivo de entrada;  
+    ARG3 - arquivo de saída.
