@@ -22,9 +22,9 @@ git clone https://github.com/thagd/Compiladores.git
 cd /home/liven/NetBeansProjects/T1; JAVA_HOME=/usr /home/liven/netbeans-11.2/netbeans/java/maven/bin/mvn --debug install
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Substituir pelos caminhos do seu computador:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARG1 - caminho do compilador;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARG2 - variável JAVA_HOME, diretório de instalação do java;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Substituir pelos caminhos do seu computador:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARG1 - caminho do compilador;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARG2 - variável JAVA_HOME, diretório de instalação do java;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARG3 - caminho do executável mvn do NetBeans.
 
 - Executar o programa utilizando o seguinte comando:
@@ -32,7 +32,7 @@ cd /home/liven/NetBeansProjects/T1; JAVA_HOME=/usr /home/liven/netbeans-11.2/net
 java -jar /home/liven/NetBeansProjects/T1/target/T1-1.0-SNAPSHOT-jar-with-dependencies.jar /home/liven/Downloads/casos-de-teste/1.casos_teste_lexico/entrada/28-algoritmo_10-4_apostila_LA.txt /home/liven/Downloads/temp.txt
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Substituir pelos caminhos do seu computador:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARG1 - caminho executável do compilador;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARG1 - arquivo de entrada;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Substituir pelos caminhos do seu computador:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARG1 - caminho executável do compilador;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARG1 - arquivo de entrada;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARG3 - arquivo de saída.
