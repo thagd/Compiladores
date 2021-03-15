@@ -25,17 +25,19 @@ public class Principal {
             // Variável para controle dos tokens de acordo com as regras léxicas
             Token t = null;
             
+            // Remove a mensagem de erro padrão
             parser.removeErrorListeners();
-            // Registrar o error lister personalizado aqui
+            // Registra o error personalizado da analise lexica e sintatica
             MyCustomErrorListener mcel = new MyCustomErrorListener(pw);
             parser.addErrorListener(mcel);
             
+            // Verifica se tem algum erro no código
             try {
+                // Roda a analise sintatica
                 parser.programa();
             } catch (Exception ex){
-                System.out.println("Falha de compilação.");
+                pw.println("Fim da compilacao");
             }
-            pw.println("Fim da compilacao");
         } catch (IOException ex) {
             // Printa no terminal caso a criação do arquivo não tenha sido realizada de forma correta
             System.out.println("Falha na criação do arquivo de saída.");

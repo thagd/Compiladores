@@ -11,8 +11,10 @@ import java.util.BitSet;
 import org.antlr.v4.runtime.atn.ATNConfigSet;
 import org.antlr.v4.runtime.dfa.DFA;
 
+// Classe para customizar os erros gerados na analise lexica e sintatica
 public class MyCustomErrorListener implements ANTLRErrorListener {
     PrintWriter pw;
+    // pw é o arquivo de saída passado para a função
     public MyCustomErrorListener(PrintWriter pw) {
       this.pw = pw;
     }
@@ -29,8 +31,10 @@ public class MyCustomErrorListener implements ANTLRErrorListener {
     public void reportContextSensitivity(Parser recognizer, DFA dfa, int startIndex, int stopIndex, int prediction, ATNConfigSet configs) {
     }
     
+    // Verifica os erros, se é sintático ou semântico e grava no arquivo de saída a mensagem correspondente
     @Override
     public void	syntaxError(Recognizer<?,?> recognizer, Object offendingSymbol, int line, int charPositionInLine, String msg, RecognitionException e) {
+        // Verifica o token que ocorreu o erro
         Token t = (Token) offendingSymbol;
         
         switch(LALexer.VOCABULARY.getDisplayName(t.getType())) {
@@ -47,12 +51,14 @@ public class MyCustomErrorListener implements ANTLRErrorListener {
               pw.println("Linha " + line + ": cadeia literal nao fechada");
               return;
             default:
+                // Formata os erros sintáticos
                 if(t.getText() == "<EOF>"){
                     pw.println("Linha "+line+": erro sintatico proximo a EOF");
                 } else {
                     pw.println("Linha "+line+": erro sintatico proximo a "+t.getText());
                 }
         }
+        // Cria uma exception para parar a verificação de erros e printar um unico erro no arquivo de saida 
         throw new RuntimeException();
     }
 }
