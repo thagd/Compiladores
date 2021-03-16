@@ -39,7 +39,7 @@ java -jar /home/liven/NetBeansProjects/T1/target/T1-1.0-SNAPSHOT-jar-with-depend
 
 ### T2
 ### Grupo
-743596 - Thaís Gagliardo Dordan
+743596 - Thaís Gagliardo Dordan  
 743575 - Marcelo Riceto Bertier
 
 #### Programas
