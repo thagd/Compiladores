@@ -1,9 +1,9 @@
 # Compiladores
 
+### T1
 ### Grupo
 743596 - Thaís Gagliardo Dordan
 
-### T1
 #### Programas
 Para utilizar o compilador da linguagem LA e suas regras léxicas, é necessário instalar os seguintes programas e suas respectivas versões:
 
@@ -38,6 +38,10 @@ java -jar /home/liven/NetBeansProjects/T1/target/T1-1.0-SNAPSHOT-jar-with-depend
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ARG3 - arquivo de saída.
 
 ### T2
+### Grupo
+743596 - Thaís Gagliardo Dordan
+743575 - Marcelo Riceto Bertier
+
 #### Programas
 Para utilizar o compilador da linguagem LA e suas regras léxicas e semânticas, é necessário instalar os seguintes programas e suas respectivas versões:
 
