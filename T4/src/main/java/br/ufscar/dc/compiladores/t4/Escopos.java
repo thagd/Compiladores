@@ -1,4 +1,3 @@
-/*
 package br.ufscar.dc.compiladores.t4;
 
 import java.util.LinkedList;
@@ -8,7 +7,7 @@ public class Escopos {
 
     private LinkedList<TabelaDeSimbolos> pilhaDeTabelas;
 
-    // incializa com um escopo já criado
+    // inicializa com um escopo já criado
     public Escopos() {
         pilhaDeTabelas = new LinkedList<>();
         criarNovoEscopo();
@@ -30,4 +29,3 @@ public class Escopos {
         pilhaDeTabelas.pop();
     }
 }
-*/

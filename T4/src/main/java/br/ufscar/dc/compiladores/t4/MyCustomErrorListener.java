@@ -43,10 +43,7 @@ public class MyCustomErrorListener implements ANTLRErrorListener {
               pw.println("Linha " + line + ": " + t.getText() + " - simbolo nao identificado");
               return;
             default:
-                // Formata os erros sintáticos
-                if(t.getText() == "<EOF>"){
-                    pw.println("Linha "+line+": erro sintatico proximo a EOF");
-                } else {
+                if(!t.getText().equals("<EOF>")){
                     pw.println("Linha "+line+": erro sintatico proximo a "+t.getText());
                 }
         }

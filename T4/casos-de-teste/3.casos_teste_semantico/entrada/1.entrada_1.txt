@@ -1,0 +1,18 @@
+compras
+    padaria
+        pao, 2.00
+        doce, 4
+    açougue
+        frango, 15.00
+        frango, 10
+    hortifruti
+        alface, 2
+    higiene
+        pasta de dente, 4.00
+    limpeza
+        veja, 2.00
+    bebidas
+        cerveja, 2.00
+    alimentação
+        arroz, 12.00
+    total: 47

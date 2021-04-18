@@ -42,7 +42,7 @@ ERRO: .;
     Declaração das regras sintáticas
 */
 
-lista_compras: 'compras' lista_padaria lista_acougue lista_hortifruti lista_higiene lista_limpeza lista_bebidas lista_alimentacao total_compra <eof>;
+lista_compras: 'compras' lista_padaria lista_acougue lista_hortifruti lista_higiene lista_limpeza lista_bebidas lista_alimentacao total_compra <EOF>;
 lista_padaria: 'padaria' item+;
 lista_acougue: 'açougue' item+;
 lista_hortifruti: 'hortifruti' item+;

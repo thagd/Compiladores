@@ -7,6 +7,7 @@ import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.Token;
+import br.ufscar.dc.compiladores.t4.ComprasParser.Lista_comprasContext;
 
 public class Principal {
 
@@ -31,19 +32,14 @@ public class Principal {
             MyCustomErrorListener mcel = new MyCustomErrorListener(pw);
             parser.addErrorListener(mcel);
             
-            /*
             // Percorre o código
-            ProgramaContext arvore = parser.programa();
+            Lista_comprasContext arvore = parser.lista_compras();
             
             // Inicializa o analisador semântico
             ComprasSemantico semantico = new ComprasSemantico();
             
             // Percorre o código realizando a análise semântica
-            semantico.visitPrograma(arvore);
-            
-            // Escreve no arquivo os erros gerados na análise semântica
-            ComprasSemanticoUtils.errosSemanticos.forEach((erro) -> pw.println(erro));
-*/
+            semantico.visitLista_compras(arvore);
             
             // Verifica se tem algum erro no código
             try {
@@ -51,6 +47,10 @@ public class Principal {
                 parser.lista_compras();
             } catch (Exception ex){
             }
+            
+            // Escreve no arquivo os erros gerados na análise semântica
+            ComprasSemanticoUtils.errosSemanticos.forEach((erro) -> pw.println(erro));
+            
             pw.println("Fim da compilacao");
         } catch (IOException ex) {
             // Printa no terminal caso a criação do arquivo não tenha sido realizada de forma correta
