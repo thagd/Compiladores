@@ -1,1 +1,2 @@
 Linha 2: erro sintatico proximo a :
+Fim da compilacao

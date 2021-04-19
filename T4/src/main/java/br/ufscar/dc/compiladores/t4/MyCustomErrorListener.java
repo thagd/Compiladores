@@ -47,7 +47,5 @@ public class MyCustomErrorListener implements ANTLRErrorListener {
                     pw.println("Linha "+line+": erro sintatico proximo a "+t.getText());
                 }
         }
-        // Cria uma exception para parar a verificação de erros e printar um unico erro no arquivo de saida 
-        throw new RuntimeException();
     }
 }

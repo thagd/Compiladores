@@ -1,0 +1,4 @@
+Linha 3: erro sintatico proximo a teste
+Linha 4: erro sintatico proximo a doce
+Linha 3: Item não é do tipo inteiro ou real
+Fim da compilacao

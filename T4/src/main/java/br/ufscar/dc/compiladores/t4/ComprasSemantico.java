@@ -24,4 +24,16 @@ public class ComprasSemantico extends ComprasBaseVisitor<Void> {
         }
         return null;
     }
+    
+    /*
+        Verifica se valor é do tipo inteiro ou real
+    */
+    @Override
+    public Void visitItem(ComprasParser.ItemContext ctx) {
+        if(ctx.valor().NUM_INT() == null && ctx.valor().NUM_REAL() == null){
+            String mensagem = String.format("Item não é do tipo inteiro ou real");
+            ComprasSemanticoUtils.adicionarErroSemantico(ctx.start, mensagem);
+        }
+        return super.visitItem(ctx);
+    }
 }
