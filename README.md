@@ -182,7 +182,7 @@ Para utilizar o compilador da linguagem Compras e suas regras léxicas, sintáti
 - Java, versão 11.0.2 ou superior;
 - NetBeans IDE, versão 11.2.
 
-#### Como utilizar
+#### Como utilizar o compilador
 
 Para utilizar o compilador da linguagem LA é necessário os seguintes passos:
 
