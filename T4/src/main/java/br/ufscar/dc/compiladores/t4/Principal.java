@@ -25,7 +25,6 @@ public class Principal {
     static CommonTokenStream tokens;
     static ComprasParser parser;
     static ComprasVisitor semantico;
-    static MyCustomErrorListener mcel;
 
     public static void main(String[] args) throws DocumentException {     
         try (PrintWriter pw = new PrintWriter(new File(args[1]))){
@@ -47,7 +46,7 @@ public class Principal {
             // Remove a mensagem de erro padrão
             parser.removeErrorListeners();
             // Registra o error personalizado da analise lexica e sintatica
-            mcel = new MyCustomErrorListener(pw);
+            MyCustomErrorListener mcel = new MyCustomErrorListener(pw);
             parser.addErrorListener(mcel);
             // Roda a analise sintatica
             parser.lista_compras();
@@ -78,7 +77,7 @@ public class Principal {
             
             pw.println("Fim da compilacao");
             
-            if(ComprasSemanticoUtils.errosSemanticos.isEmpty() && mcel == null){
+            if(ComprasSemanticoUtils.errosSemanticos.isEmpty()){
                 return true;
             }
             return false;
@@ -100,7 +99,7 @@ public class Principal {
             // criação do objeto documento
             Document document = new Document();
             
-            PdfWriter.getInstance(document, new FileOutputStream(filePDF));
+            PdfWriter.getInstance(document, new FileOutputStream(filePDF+"PDF"));
             document.open();
 
             pdf.visitLista_compras(arvore);
