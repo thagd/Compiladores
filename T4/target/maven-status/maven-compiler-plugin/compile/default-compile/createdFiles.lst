@@ -11,6 +11,7 @@ br/ufscar/dc/compiladores/t4/ComprasParser$Lista_limpezaContext.class
 br/ufscar/dc/compiladores/t4/ComprasParser$Lista_higieneContext.class
 br/ufscar/dc/compiladores/t4/ComprasParser$ValorContext.class
 br/ufscar/dc/compiladores/t4/ComprasParser$Lista_padariaContext.class
+br/ufscar/dc/compiladores/t4/ComprasGeradorPDF.class
 br/ufscar/dc/compiladores/t4/EntradaTabelaDeSimbolos.class
 br/ufscar/dc/compiladores/t4/ComprasLexer.class
 br/ufscar/dc/compiladores/t4/ComprasBaseVisitor.class
